@@ -18,7 +18,8 @@ public class RabbitController {
 
 	@GetMapping(value = "/producer")
 	public String producer(@RequestParam("empName") String empName,@RequestParam("empId") String empId) {
-	String s = "Message sent to the RabbitMQ JavaInUse Successfully";
+	String s = "Message sent to the RabbitMQ JavaInUse Successfully "
+			+ "/javainuse-rabbitmq/producer?empName=aklsjdklajs&empId=andndnd";
 	Employee emp=new Employee();
 	emp.setEmpId(empId);
 	emp.setEmpName(empName);
